@@ -65,6 +65,11 @@ public class FileUserDataAccessObject implements SignupUserDataAccessInterface,
         this.currentUser = name;
     }
 
+    @Override
+    public String getCurrentUser() {
+        return this.currentUser;
+    }
+
     private void save() {
         final BufferedWriter writer;
         try {
